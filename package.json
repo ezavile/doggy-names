@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint src",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run lint"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,12 @@
   "bugs": {
     "url": "https://github.com/ezavile/doggy-names/issues"
   },
-  "homepage": "https://github.com/ezavile/doggy-names#readme"
+  "homepage": "https://github.com/ezavile/doggy-names#readme",
+  "devDependencies": {
+    "eslint": "4.15.0",
+    "pre-commit": "1.2.2"
+  },
+  "pre-commit": [
+    "test"
+  ]
 }
