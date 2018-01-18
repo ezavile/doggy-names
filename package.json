@@ -1,0 +1,33 @@
+{
+  "name": "doggy-names",
+  "version": "1.0.0",
+  "description": "Funny library to get random doggy names",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src",
+    "test": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ezavile/doggy-names.git"
+  },
+  "keywords": [
+    "dog",
+    "doggy",
+    "pet",
+    "dog name"
+  ],
+  "author": "Edgar Zavala <ezavile@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ezavile/doggy-names/issues"
+  },
+  "homepage": "https://github.com/ezavile/doggy-names#readme",
+  "devDependencies": {
+    "eslint": "4.15.0",
+    "pre-commit": "1.2.2"
+  },
+  "pre-commit": [
+    "test"
+  ]
+}
