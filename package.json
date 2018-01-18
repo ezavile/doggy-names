@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "eslint src",
     "pretest": "npm run lint",
-    "test": "mocha"
+    "test": "mocha",
+    "test:watch": "mocha --watch"
   },
   "repository": {
     "type": "git",

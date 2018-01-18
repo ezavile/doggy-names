@@ -2,7 +2,11 @@ var uniqueRandomArray = require('unique-random-array');
 var doggyNames = require('./doggy-names.json');
 
 module.exports = {
-  all: doggyNames,
+  all: function() {
+    return doggyNames;
+  },
   random: uniqueRandomArray(doggyNames),
-  sort: doggyNames.sort()
+  sort: function() {
+    return doggyNames.sort();
+  }
 };
