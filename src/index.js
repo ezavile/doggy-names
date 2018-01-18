@@ -1,3 +1,8 @@
-var sayHi = 'There should be problems with linting :(';
+var uniqueRandomArray = require('unique-random-array');
+var doggyNames = require('./doggy-names.json');
 
-console.log(sayHi);
+module.exports = {
+  all: doggyNames,
+  random: uniqueRandomArray(doggyNames),
+  sort: doggyNames.sort()
+};
