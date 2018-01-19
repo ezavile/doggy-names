@@ -1,6 +1,6 @@
 {
   "name": "doggy-names",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Funny library to get random doggy names",
   "main": "dist/index.js",
   "scripts": {
@@ -9,7 +9,7 @@
     "test": "nyc mocha",
     "test:watch": "mocha --watch",
     "prebuild": "rimraf dist",
-    "build": "cpx src/index.js dist/",
+    "build": "cpx 'src/*.{js,json}' dist",
     "report-coverage": "cat ./coverage/lcov.info | codecov"
   },
   "repository": {
